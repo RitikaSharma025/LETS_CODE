@@ -11,7 +11,7 @@
     ],
     "routes": [
         {
-        "src": "/*",
+        "src": "/:id",
         "dest": "src/server.js"
       },
       {

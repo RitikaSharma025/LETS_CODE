@@ -37,9 +37,9 @@ const publicDirectoryPath = path.join(__dirname,'../public')
  
 //Setup static directory to serve
 app.use('/public', express.static(publicDirectoryPath))
-app.use('*',(req,res)=>{
-    res.sendFile(path.resolve(__dirname,'index.html'))
-})
+// app.use('*',(req,res)=>{
+//     res.sendFile(path.resolve(__dirname,'index.html'))
+// })
 
 app.get('/:id', (req, res) => {
     const fileDirectory = path.join(__dirname,'../');
